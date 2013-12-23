@@ -1,8 +1,6 @@
 <?php
 /**
- * Készítette: mathzol
- * Dátum: 2013.12.23.
- * Fájlnév: PHPTor.php
+ * @author Máthé Zoltán <mathzoltan@gmail.com>
  */
 
 class PHPTor {
@@ -66,6 +64,7 @@ class PHPTor {
 
                 self::torDisconnection();
                 self::torConnection();
+                return 0;
             }
 
             return 1;
