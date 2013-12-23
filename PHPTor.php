@@ -1,6 +1,9 @@
 <?php
 /**
  * @author Máthé Zoltán <mathzoltan@gmail.com>
+ * @licence The MIT License (MIT)
+ *
+ * Copyright (c) 2013 Mathe Zoltan
  */
 
 class PHPTor {
