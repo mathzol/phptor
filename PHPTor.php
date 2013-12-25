@@ -1,6 +1,7 @@
 <?php
 /**
  * @author Máthé Zoltán <mathzoltan@gmail.com>
+ * 			Késmarki Tamás <tamaskesmarki@binsys.org>
  * @licence The MIT License (MIT)
  *
  * Copyright (c) 2013 Mathe Zoltan
@@ -32,6 +33,7 @@ class PHPTor {
         $this->curl = curl_init();
         curl_setopt($this->curl, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($this->curl, CURLOPT_TRANSFERTEXT, true);
+        curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($this->curl, CURLOPT_HEADER, true);
     }
 
