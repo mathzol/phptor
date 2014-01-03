@@ -32,6 +32,7 @@ class PHPTor {
         $this->curl = curl_init();
         curl_setopt($this->curl, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($this->curl, CURLOPT_TRANSFERTEXT, true);
+        curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($this->curl, CURLOPT_HEADER, true);
     }
 
