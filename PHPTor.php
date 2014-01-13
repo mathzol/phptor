@@ -76,7 +76,7 @@ class PHPTor {
             return 1;
     }
 
-    public function torRequest($url)
+    public function request($url)
     {
         curl_setopt($this->curl, CURLOPT_URL, $url);
         return curl_exec($this->curl);
