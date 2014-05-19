@@ -10,6 +10,7 @@ class PHPTor {
     public $control_port = 9051;
     public $port = 9050;
     public $host = '127.0.0.1';
+    public $torConnected = false;
     private $curl = null;
 
     function __construct()
@@ -38,6 +39,7 @@ class PHPTor {
 
     public function torConnection()
     {
+        $this->torConnected = true;
         self::closeConnection();
         self::initConnection();
         curl_setopt($this->curl, CURLOPT_PROXY, $this->host);
@@ -47,6 +49,7 @@ class PHPTor {
 
     public function torDisconnection()
     {
+        $this->torConnected = false;
         self::closeConnection();
         self::initConnection();
     }
